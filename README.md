@@ -35,6 +35,13 @@ Configuration files used in this example can be found in the `asterisk-conf` fol
 
 ## Configuraciones en asterisk:
 
+
+### /etc/asterisk/rtp.conf
+
+    stunaddr=stun.l.google.com:19302
+
+
+
 ### /etc/asterisk/http.conf
 
     [general]
