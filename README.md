@@ -12,7 +12,7 @@ After cloning the repository, open `js/main.js` and set the `domain` variable to
 
 Then install the npm dependencies an run the application with npm start. The app will be available at https://localhost:8080
 
-    git clone https://github.com/agilityfeat/webrtc-sip-example.git
+    git clone https://github.com/agilityfeat/webrtc-sip-2.git
     cd webrtc-sip-example
     npm install
     npm start
@@ -29,3 +29,4 @@ Configuration files used in this example can be found in the `asterisk-conf` fol
 * We use [http-server](https://www.npmjs.com/package/http-server) to serve the files.
 * We use [jssip](http://jssip.net/) for sip support
 * We use [sdp-interop-sl](https://github.com/StarLeafAPIs/sdp-interop-sl) for making some required adjustments to sdp in chrome
+
