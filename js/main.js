@@ -28,8 +28,8 @@ const domain = "18.224.3.22"
     var socket = new JsSIP.WebSocketInterface('ws://' + domain + ':8088/ws')
     var configuration = {
         sockets: [socket],
-        uri: 'sip:'+ 'bob' +'@' + domain,
-        authorization_user: 'bob',
+        uri: 'sip:'+ 'dan' +'@' + domain,
+        authorization_user: 'dan',
         password: '123456'
     }
 
@@ -118,7 +118,7 @@ btnCall.addEventListener('click', () => {
         }
     }
 
-    session = ua.call('sip:' + '1000' + '@' + domain, options)
+    session = ua.call('sip:' + 'vdc53' + '@' + domain, options)
 })
 
 btnHangup.addEventListener('click', () => {
