@@ -33,7 +33,7 @@ Configuration files used in this example can be found in the `asterisk-conf` fol
 
 
 
-##Configuraciones en asterisk:
+## Configuraciones en asterisk:
 
 ### /etc/asterisk/http.conf
 
