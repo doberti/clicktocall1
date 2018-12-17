@@ -173,7 +173,6 @@ Configuration files used in this example can be found in the `asterisk-conf` fol
     type=identify
     endpoint=vdc53
     match=192.168.105.53
-    '''
     
     
     
@@ -188,4 +187,21 @@ Configuration files used in this example can be found in the `asterisk-conf` fol
     exten => vdc53,1,Dial(PJSIP/${EXTEN})
     exten => dan,1,Dial(PJSIP/${EXTEN})
 
+
+
+
+
+# Pasos para instalar el códec opus:
+
+    cd /usr/src
+    wget http://downloads.digium.com/pub/telephony/codec_opus/asterisk-15.0/x86-64/codec_opus-15.0_current-x86_64.tar.gz
+    tar -xvzf codec_opus-*
+    cd codec_opus-*
+    cp codec_opus.so /usr/lib/asterisk/modules/
+    cp codec_opus_config-en_US.xml /var/lib/asterisk/documentation/thirdparty/
+    rasterisk –vvv
+    core restart now
+    rasterisk –vvv
+    core reload
+    core show  translation
 
